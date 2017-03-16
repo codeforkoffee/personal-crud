@@ -1,0 +1,10 @@
+<div>
+  <img src="https://media.giphy.com/media/xTiQywlOn0gKyz0l56/giphy.gif">
+  <h1>Calendar</h1>
+  <a href="/events/new">Create a New Event</a><br>
+  <dl>
+    <% events.each do |event| %>
+      <li><a href="/events/<%= event.id %>"><%= event.title %></a></li>
+    <% end %>
+  </dl>
+</div>
